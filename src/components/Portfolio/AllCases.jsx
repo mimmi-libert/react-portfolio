@@ -108,19 +108,20 @@ function AllCases() {
                 )}
                 <LangLink
                   to={`/case/${caseItem.id}`}
+                  reloadDocument={true}
                   className="block focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-4" // The entire area is clickable
                 >
                   <figure
                     className="cases__secondary__image overflow-hidden rounded-[5px] cursor-pointer aspect-[4/3]"
                     aria-label={`${caseItem.organization} project image`}
                   >
-                    <ImageZoom className="w-full">
+                    <ImageZoom className="w-full h-full">
                       <img
                         src={caseItem.image}
                         alt={`${caseItem.organization} - ${categoryLabels.join(
                           " / "
                         )} project`}
-                        className="aspect-[4/3] object-cover"
+                        className="w-full h-full object-cover"
                       />
                     </ImageZoom>
                   </figure>

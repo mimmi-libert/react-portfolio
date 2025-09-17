@@ -8,6 +8,7 @@ const CaseHeader = () => {
   const { caseId } = useParams();
   const { language, changeLanguage } = useLanguage();
   const { t } = useLanguage();
+  const [isScrolled, setIsScrolled] = useState(false);
 
   // Get case data using the caseId from URL params
   const caseData = getCaseById(caseId);
@@ -27,8 +28,6 @@ const CaseHeader = () => {
     changeLanguage(newLanguage);
   };
 
-  const [isScrolled, setIsScrolled] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -41,7 +40,7 @@ const CaseHeader = () => {
 
   return (
     <header
-      className={`w-full fixed left-0 z-100 h-[60px] md:h-[80px] bg-black grid items-center transition-shadow duration-300 ${
+      className={`w-full fixed left-0 top-0 z-100 h-[60px] md:h-[80px] bg-black grid items-center transition-shadow duration-300 ${
         isScrolled ? "shadow-[0_4px_20px_rgba(0,0,0,0.3)]" : ""
       }`}
     >
@@ -56,6 +55,7 @@ const CaseHeader = () => {
         <div className="max-w-[1240px] mx-auto flex justify-between items-center">
           <LangLink
             to="/"
+            reloadDocument={true}
             className="text-orange flex items-center gap-3xs font-rubik text-sm relative
 											after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[1.5px] after:bg-orange 
 											after:transform after:scale-x-0 after:origin-center after:duration-[300ms]

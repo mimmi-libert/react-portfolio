@@ -44,16 +44,6 @@ const skillsList = [
 const workExperienceList = [
   {
     type: "work-experience",
-    translationKey: "brfUtsikten",
-    organization: "BrfUtsikten",
-    task: "Web Design & Web Development",
-    date: "September 2025 - present",
-    description:
-      "Interning part-time at a web agency as a web designer and front-end developer. At Balonka, I had the opportunity to create designs and rebuild several websites in WordPress (Divi), based on client needs and specifications.",
-    dateObject: new Date("2025-09-01"),
-  },
-  {
-    type: "work-experience",
     translationKey: "balonka",
     organization: "Balonka",
     task: "Internship",

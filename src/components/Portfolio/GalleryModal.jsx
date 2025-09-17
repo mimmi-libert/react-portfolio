@@ -1,42 +1,34 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const GalleryModal = ({ images, initialIndex = 0, onClose }) => {
+const GalleryModal = ({ images, isOpen, initialIndex = 0, onClose }) => {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
-  const [isScreenLargeEnough, setIsScreenLargeEnough] = useState(false);
   const modalRef = useRef(null);
+  const innerRef = useRef(null);
   const mainImageRef = useRef(null);
   const closeButtonRef = useRef(null);
 
-  // Minimum swipe distance (in px)
+  // Minimum swipe distance (px)
   const minSwipeDistance = 50;
 
-  // Check screen size on mount and resize
   useEffect(() => {
-    const checkScreenSize = () => {
-      setIsScreenLargeEnough(window.innerWidth >= 768); // md breakpoint is 768px
-    };
-
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-
-    return () => window.removeEventListener("resize", checkScreenSize);
-  }, []);
-
-  // Focus management and modal opening - only if screen is large enough
-  useEffect(() => {
-    if (modalRef.current && isScreenLargeEnough) {
-      modalRef.current.showModal();
-      closeButtonRef.current?.focus();
+    if (!modalRef.current) {
+      return;
     }
-  }, [isScreenLargeEnough]);
+    const dialog = modalRef.current;
+    if (isOpen) {
+      dialog.showModal();
+    } else {
+      dialog.close();
+    }
+  }, [isOpen]);
 
   // Handle escape key to close modal
   useEffect(() => {
     const handleEscape = (e) => {
       if (e.key === "Escape") {
-        onClose();
+        onclose();
       }
     };
 
@@ -97,36 +89,37 @@ const GalleryModal = ({ images, initialIndex = 0, onClose }) => {
   };
 
   const handleClose = () => {
-    if (modalRef.current) {
-      modalRef.current.close();
-    }
     onClose();
   };
 
-  // Don't render modal if screen is too small
-  if (!isScreenLargeEnough) {
-    return null;
-  }
+  const handleOutsideClick = (e) => {
+    if (innerRef.current && !innerRef.current.contains(e.target)) {
+      handleClose();
+    }
+  };
 
   return (
     <dialog
       ref={modalRef}
-      className="backdrop:bg-black/80 border-none outline-none w-[90vw] lg:w-[80vw] xl:w-[60vw] max-w-[1240px] rounded-[5px] fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-hidden bg-white"
+      className="backdrop:bg-black/80 m-auto bg-transparent rounded-[5px] overflow-hidden"
       aria-labelledby="gallery-modal-heading"
       aria-describedby="gallery-modal-description"
       onClose={handleClose}
-      tabIndex="-1"
-      role="dialog"
-      aria-modal="true"
+      open={false}
+      onMouseDown={handleOutsideClick}
     >
-      <div className="relative h-full flex flex-col">
-        {/* Top focus sentinel (loops back to Close) */}
-        <div
-          className="sr-only"
-          tabIndex="0"
-          aria-hidden="true"
-          onFocus={() => closeButtonRef.current?.focus()}
-        />
+      {/* Bottom focus sentinel (loops back to Close) */}
+      <div
+        className="sr-only"
+        tabIndex="0"
+        aria-hidden="true"
+        onFocus={() => closeButtonRef.current?.focus()}
+      />
+
+      <div
+        ref={innerRef}
+        className="dialog__inner relative grid grid-cols-1 grid-rows-[auto_minmax(0,1fr)_min-content] m-auto outline-none max-w-[1024px] max-h-[840px] rounded-[5px] overflow-hidden bg-white"
+      >
         {/* Header with close button */}
         <div className="flex justify-end">
           <button
@@ -155,7 +148,7 @@ const GalleryModal = ({ images, initialIndex = 0, onClose }) => {
         </div>
 
         {/* Main image area */}
-        <div className="flex-1 relative overflow-hidden px-2xs md:px-lg">
+        <div className="relative overflow-hidden px-2xs md:px-lg">
           <div
             ref={mainImageRef}
             className="w-full h-full flex items-center justify-center aspect-[4/3] rounded-[5px] overflow-hidden"
@@ -219,13 +212,13 @@ const GalleryModal = ({ images, initialIndex = 0, onClose }) => {
         </div>
 
         {/* Thumbnails */}
-        <div className="">
-          <div className="grid grid-cols-6 justify-center gap-1 md:gap-2 overflow-x-auto px-2xs md:px-lg pt-2 md:pt-2xs pb-xs md:pb-md">
+        <div>
+          <div className="grid grid-cols-6 grid-rows-1 justify-center gap-1 md:gap-2 overflow-x-auto px-2xs md:px-lg pt-2 md:pt-2xs pb-xs md:pb-md">
             {images.map((image, index) => (
               <button
                 key={index}
                 onClick={() => goToImage(index)}
-                className={`rounded-[5px] overflow-hidden border-4 transition-all focus-visible:outline-4 focus-visible:outline-teal focus-visible:outline-offset-0 ${
+                className={`rounded-[5px] aspect-[4/3] border overflow-hidden transition-all focus-visible:outline-4 focus-visible:outline-teal focus-visible:outline-offset-0 ${
                   index === currentIndex
                     ? "border-orange"
                     : " border-white hover:border-black-transparent"
@@ -236,7 +229,7 @@ const GalleryModal = ({ images, initialIndex = 0, onClose }) => {
                 <img
                   src={image}
                   alt={`Thumbnail ${index + 1}`}
-                  className="h-full object-cover aspect-[4/3]"
+                  className="h-full object-cover w-full"
                 />
               </button>
             ))}

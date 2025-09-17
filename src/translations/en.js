@@ -27,7 +27,7 @@ export const en = {
   development: "Development.",
   content: "Content.",
   designDescription:
-    "I design visuals in <strong>Figma</strong>, <strong>Photoshop</strong> and <strong>Illustrator</strong> that connects to client's audience.",
+    "I design visuals in <strong>Figma</strong>, <strong>Photoshop</strong> and <strong>Illustrator</strong> that connects to the client's audience.",
   developmentDescription:
     "I build accessible websites with <strong>Wordpress</strong>, <strong>React</strong>, <strong>HTML/JS</strong> and <strong>CSS (Tailwind/Sass)</strong>.",
   contentDescription:
@@ -52,19 +52,19 @@ export const en = {
       "swedish-aral-sea-society": {
         organization: "Swedish Aral Sea Society",
         description:
-          "The Swedish Aral Sea Society is undergoing a renewal of its visual identity and website. A new logo and web design has been developed to more clearly communicate the organization’s mission, with a full migration from Joomla to WordPress planned for early autumn 2025 to ensure a modern, flexible platform for future growth.",
+          "The Swedish Aral Sea Society is undergoing a renewal of its visual identity and website. A new logo and web design has been developed to more clearly communicate the organization’s mission, with a full migration from Joomla to WordPress planned for autumn 2025 to ensure a modern, flexible platform for future growth.",
         fullDescription: [
           "The Swedish Aral Sea Society is a Sweden-based non-profit organization working to strengthen democracy and promote sustainable development in Central Asia, notably in the Aral Sea region. Founded in the late 90s, the organization has now begun the process of modernizing and clarifying its visual identity and website.",
-          "I chose this organization as my final school project, with the goal of creating a platform featuring a clear, user-friendly structure and streamlined content presentation to better communicate their mission. As part of this, I developed an updated logo and design that highlight the society's environmental focus—drawing inspiration from the region's climate challenges while reflecting a tone of hope and progress aligned with their work.",
-          "My next step in the collaboration with SASS is to migrate the website from Joomla to WordPress during early autumn 2025, ensuring a modern, flexible solution tailored to the organization's needs and future growth. Until the full migration is complete, I have created a basic prototype to visualize the new structure and design approach, helping the organization explore content placement, navigation, and branding direction.",
+          "I chose this organization as my final school project, with the goal of creating a platform featuring a clear, user-friendly structure and streamlined content presentation to better communicate their mission. As part of this, I've developed a new logo in Adobe Illustrator and a web design in Figma that highlight the society's environmental focus - drawing inspiration from the region's climate challenges while reflecting a tone of hope and progress aligned with their work.",
+          "I am currently working with the website's migration from Joomla to WordPress, ensuring a modern, flexible solution tailored to the organization's needs and future growth. Until the full migration is complete, I have created a basic prototype to visualize the new structure and design approach.",
         ],
       },
       swingkatten: {
         organization: "Swingkatten",
         description: "Kort beskrivning av Swingkatten-projektet",
         fullDescription: [
-          "Swingkatten is an Uppsala-based swing dance association that offers year-round classes and activities. The organization is currently working to rebuild its membership base to pre-Covid levels. Having been a member of Swingkatten for several years, I recently joined the web team to contribute my skills to the redesign and rebuild of the website in WordPress (Elementor).",
-          "The project focuses on maintaining and strengthening the association's visual identity while restructuring the site to better meet the needs and expectations of its members and wider audience. Ahead of the official launch in early autumn 2025, I am applying the redesign to the web team's working prototype to test navigation, layout, and content flow, ensuring the design effectively supports both new visitors and returning members. My next step in the collaboration is to finalize the WordPress implementation and optimize the site for long-term usability, flexibility, and ease of maintenance.",
+          "Swingkatten is an Uppsala-based swing dance association that offers year-round classes and activities. Having been a member of Swingkatten for several years, I recently joined the web team to contribute my skills to the redesign and rebuild of the website in WordPress (Elementor).",
+          "This project focuses on preserving and strengthening the association’s visual identity while redesigning the website to better meet the expectations of both members and a wider audience. The content has been restructured and the navigation streamlined to optimize user experience and highlight the more central elements. The layout is consistent and spacious, complemented by a softer color palette, with the aim of highlighting the association’s active work without overwhelming the visitor. Feel free to take a sneak peak of my ongoing work in the gallery! ",
         ],
       },
       nordanvind: {
@@ -72,7 +72,7 @@ export const en = {
         description: "Kort beskrivning av Nordanvind-projektet",
         fullDescription: [
           "Nordanvind is a fictional energy company investing in sustainable energy sources and solutions. Its logo and graphic profile have been designed to embody the company’s core values, blending human presence with the dynamic forces of nature.",
-          "The logo was designed in Adobe Illustrator and the visual identity was developed using Adobe Photoshop and Figma.",
+          "The logo was designed in <strong>Adobe Illustrator</strong> and the visual identity was developed using <strong>Adobe Photoshop</strong> and <strong>Figma</strong>.",
         ],
         pdfName: "Download Graphic Profile as PDF",
       },
@@ -90,7 +90,7 @@ export const en = {
     "Armed with a teaching degree in mathematics, I spent the first years of my career in the classroom. Although I today channel a higher passion for web design and developing - the ideal blend of logic and creativity in my opinion - my goal remains the same: making content simple, accessible and engaging.",
   aboutDescriptionOutro:
     "Are you an organization who values both autonomy and meaningful collaboration? If so, I'd love to be a part of it.",
-  skills: "Skillset",
+  skills: "Current skill set",
   resumeButtonOpen: "See my resume",
   resumeButtonClose: "Hide my resume",
 

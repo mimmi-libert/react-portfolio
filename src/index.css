@@ -8,7 +8,7 @@
   /* Font sizes */
   --text-xs: 15px;
   --text-sm: clamp(1rem, 0.9257rem + 0.3604vw, 1.25rem);
-  --text-md: clamp(1rem, 0.8142rem + 0.9009vw, 1.625rem);
+  --text-md: clamp(1.15rem, 0.8142rem + 0.9009vw, 1.625rem);
   --text-lg: clamp(1.25rem, 0.9899rem + 1.2613vw, 2.125rem);
   --text-xl: clamp(1.5rem, 1.1098rem + 1.8919vw, 2.8125rem);
   --text-2xl: clamp(1.625rem, 1.0118rem + 2.973vw, 3.6875rem);
@@ -35,6 +35,9 @@
   --color-teal: #3b767a;
   --color-teal-dark: #3d555a;
   --color-brown: #705d56;
+
+  /* Custom breakpoints */
+  --breakpoint-xs: 26rem;
 }
 
 @layer base {
@@ -50,6 +53,11 @@
 
   html {
     scroll-behavior: smooth;
+  }
+
+  html,
+  body {
+    overscroll-behavior-y: none;
   }
 
   .heading-1,

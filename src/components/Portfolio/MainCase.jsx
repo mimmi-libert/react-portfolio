@@ -68,25 +68,25 @@ function MainCase() {
   );
 
   return (
-    <article className="cases__main grid grid-rows-auto grid-cols-1 lg:grid-rows-1 lg:grid-cols-[7fr_5fr] gap-y-2xs md:gap-y-xs">
+    <article className="cases__main grid grid-rows-auto grid-cols-1 lg:grid-rows-1 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)] lg:max-h-[800px] overflow-hidden items-strech gap-y-2xs md:gap-y-xs">
       <LangLink
         to={`/case/${translatedCaseData.id}`}
         className="lg:row-span-full lg:col-span-full focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-4"
       >
         <figure
-          className="cases__main__image lg:row-span-full lg:col-span-full h-full overflow-hidden relative rounded-[5px] cursor-pointer"
+          className="cases__main__image lg:row-span-full lg:col-span-full min-w-0 min-h-0 lg:h-full overflow-hidden relative rounded-[5px] cursor-pointer"
           aria-label={`${translatedCaseData.organization} project image`}
         >
           <ImageZoom
             src={translatedCaseData.image}
-            className="h-full overflow-hidden rounded-[5px] lg:rounded-bl-[5px] lg:rounded-tr-[0px]"
+            className="aspect-[4/3] lg:h-full overflow-hidden rounded-[5px] lg:rounded-bl-[5px] lg:rounded-tr-[0px]"
           >
             <img
               src={translatedCaseData.image}
               alt={`${translatedCaseData.organization} - ${categoryLabels.join(
                 " / "
               )} project`}
-              className="h-full overflow-hidden object-cover"
+              className="w-full h-full object-cover"
             />
           </ImageZoom>
           {isUnderConstruction && (
@@ -100,7 +100,7 @@ function MainCase() {
           )}
         </figure>
       </LangLink>
-      <div className="cases__main__content lg:px-sm xl:px-md lg:py-[56px] lg:bg-brown lg:row-span-full lg:col-start-2 lg:place-content-end rounded-bl-[5px] rounded-br-[5px] lg:rounded-tr-[5px] lg:rounded-bl-[0px] relative z-10 grid gap-2 md:gap-3">
+      <div className="cases__main__content min-w-0 min-h-0 lg:px-sm xl:px-md lg:py-[56px] lg:bg-brown lg:row-span-full lg:col-start-2 lg:place-content-end rounded-bl-[5px] rounded-br-[5px] lg:rounded-tr-[5px] lg:rounded-bl-[0px] relative z-10 grid gap-2 md:gap-3">
         <a
           href={`/case/${translatedCaseData.id}`}
           className="block focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"

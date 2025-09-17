@@ -52,19 +52,19 @@ export const sv = {
       "swedish-aral-sea-society": {
         organization: "Svenska Aralsjösällskapet",
         description:
-          "Svenska Aralsjösällskapet har påbörjat arbetet med att modernisera och tydliggöra sin visuella identitet och hemsida. En ny logotyp och webbdesign har tagits fram för att tydligare kommunicera organisationens uppdrag. Under tidig höst 2025 planeras en förflyttning av hemsidan från Joomla till WordPress för att säkerställa en modern och flexibel lösning anpassad till föreningens behov och framtida arbete.",
+          "Svenska Aralsjösällskapet har påbörjat arbetet med att modernisera och tydliggöra sin visuella identitet och hemsida. En ny logotyp och webbdesign har tagits fram för att tydligare kommunicera organisationens uppdrag. Under hösten 2025 planeras en förflyttning av hemsidan från Joomla till WordPress för att säkerställa en modern och flexibel lösning anpassad till föreningens behov och framtida arbete.",
         fullDescription: [
-          "Svenska Aralsjöföreningen är en svensk ideell organisation...",
-          "Jag valde denna organisation som mitt slutprojekt...",
-          "Mitt nästa steg i samarbetet med SASS är att migrera webbplatsen...",
+          "Svenska Aralsjösällskapet är en svensk ideell organisation som arbetar för att stärka demokratin och främja hållbar utveckling i Centralasien, framför allt i Aralsjöregionen. Organisationen grundades i slutet av 90-talet och har nu påbörjat processen att modernisera och tydliggöra sin visuella identitet och webbplats.",
+          "Mitt mål i samarbetet med föreningen är att skapa en plattform med en tydlig, användarvänlig struktur och lättillgängligt innehåll för att bättre kommunicera deras uppdrag. Som en del av projektet har jag tagit fram en ny logotyp i Adobe Illustrator och en webbdesign i Figma som lyfter fram föreningens miljöfokus och deras framsteg i arbetet med regionens klimatutmaningar.",
+          "Jag arbetar nu med att migrera webbplatsen från Joomla till WordPress för att säkerställa en modern och flexibel lösning anpassad till organisationens behov och framtida tillväxt. Under tiden har jag skapat en prototyp av hemsidan för att visualisera den nya strukturen och designinriktningen.",
         ],
       },
       swingkatten: {
         organization: "Swingkatten",
         description: "Kort beskrivning av Swingkatten-projektet",
         fullDescription: [
-          "Swingkatten är en Uppsalabaserad swingdansförening som erbjuder kurser och aktiviteter året runt. Föreningen arbetar just nu med att återbygga sitt medlemsantal till nivåerna före Covid. Efter att själv ha varit medlem i Swingkatten i flera år gick jag nyligen med i webbgruppen för att bidra med mina kunskaper i arbetet med att designa om och bygga upp webbplatsen i WordPress (Elementor).",
-          "Projektet fokuserar på att bevara och stärka föreningens visuella identitet samtidigt som webbplatsen omstruktureras för att bättre möta behoven och förväntningarna hos både medlemmar och en bredare publik. Inför den officiella lanseringen under tidig höst 2025 applicerar jag den nya designen på webbgruppens arbetsprototyp för att testa navigation, layout och innehållsflöde samt för att säkerställa att designen effektivt stödjer både nya besökare och återkommande medlemmar. Mitt nästa steg i samarbetet är att färdigställa WordPress-implementeringen och optimera sidan för långsiktig användbarhet, flexibilitet och enkelhet i underhållet.",
+          "Swingkatten är en Uppsalabaserad swingdansförening som erbjuder kurser och aktiviteter året runt. Som medlem i Swingkatten sedan flera år gick jag nyligen med i webbgruppen för att bidra med mina kunskaper i arbetet med en ny design och ombyggnad av föreningens hemsida i WordPress (Elementor).",
+          "Projektet syftar till att bevara och stärka föreningens visuella identitet, samtidigt som webbplatsen utvecklas för att bättre möta förväntningarna hos både medlemmar och en bredare publik. Innehållet har omstrukturerats och navigationen förenklats för att optimera användarupplevelsen och lyfta fram de mest centrala delarna. Layouten är konsekvent och luftig, med en mjukare färgpalett, och fokuserar på att framhäva föreningens aktiva verksamhet utan att överväldiga besökaren. Smygkika gärna på mitt pågående arbete i galleriet nedan!",
         ],
       },
       nordanvind: {
@@ -89,7 +89,7 @@ export const sv = {
     "Med en bakgrund som matematiklärare inledde jag mina första arbetsår i klassrummet. Även om min passion idag ligger inom webbdesign och webbutveckling, kvarstår mitt ursprungliga mål: att skapa innehåll som är engagerande och tillgängligt för alla.",
   aboutDescriptionOutro:
     "Är ni en organisation som värdesätter kompetensutveckling och konstruktivt samarbete? I så fall kan jag vara rätt person för er.",
-  skills: "Färdigheter",
+  skills: "Nuvarande färdigheter",
   resumeButtonOpen: "Se mitt CV",
   resumeButtonClose: "Göm mitt CV",
 

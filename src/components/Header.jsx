@@ -99,7 +99,7 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full fixed left-0 z-100 h-[60px] md:h-[80px] bg-black grid items-center transition-shadow duration-300 ${
+      className={`w-full top-0 fixed left-0 z-100 h-[60px] md:h-[80px] bg-black grid items-center transition-shadow duration-300 ${
         isScrolled ? "shadow-[0_4px_20px_rgba(0,0,0,0.3)]" : ""
       }`}
     >
@@ -111,11 +111,11 @@ const Header = () => {
         {t("skipToMainContent")}
       </a>
       <div className="px-xs md:px-sm lg:px-lg">
-        <div className="header__inner max-w-[1240px] mx-auto grid grid-cols-2 lg:grid-cols-3 items-center">
+        <div className="header__inner max-w-[1240px] mx-auto grid grid-cols-2 lg:grid-cols-[1fr_2fr_1fr] items-center">
           <LangLink
             to="/"
             reloadDocument={true}
-            className="header__logo h-[1rem] md:h-[1.5rem] focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
+            className="header__logo h-[1.15rem] md:h-[1.5rem] focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
             aria-label="Go to homepage"
           >
             <img className="h-full" src={logo} alt="Website logo" />
@@ -128,7 +128,7 @@ const Header = () => {
               role="menubar"
             >
               {mainMenu.map((item) => (
-                <li key={item.id} role="none">
+                <li key={item.id}>
                   <a
                     className="text-orange font-rubik text-sm uppercase relative pb-3xs
 											after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[1.5px] after:bg-orange 
@@ -145,7 +145,7 @@ const Header = () => {
           </nav>
 
           {/* Menu buttons */}
-          <div className="menu__buttons flex items-center justify-end gap-[20px]">
+          <div className="menu__buttons flex items-center justify-end gap-[8px]">
             <button
               onClick={handleLanguageToggle}
               className="w-[40px] h-[40px] inline-flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-8 focus-visible:ring-offset-black focus:rounded-full"
@@ -218,7 +218,6 @@ const Header = () => {
           className="fixed top-[80px] left-0 right-0 bottom-0 bg-black/50 backdrop-blur-xs z-50 md:hidden"
           onClick={() => setMenuOpen(false)}
           aria-hidden={!menuOpen}
-          // Remove role="button" and tabIndex - it's just a backdrop
         />
       )}
 
@@ -229,7 +228,6 @@ const Header = () => {
           id="responsive-menu"
           className="responsive-menu absolute top-full left-0 w-full bg-black border-b border-orange/50 z-[60] lg:hidden"
           aria-label="Mobile navigation"
-          role="navigation"
           aria-hidden="false"
         >
           <ul
@@ -237,7 +235,7 @@ const Header = () => {
             role="menu"
           >
             {responsiveMenu.map((item, index) => (
-              <li key={item.id} role="none">
+              <li key={item.id}>
                 <a
                   href={item.href}
                   className="block relative text-orange font-rubik text-sm uppercase after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[1.5px] after:bg-orange after:transform after:scale-x-0 after:origin-center after:duration-[300ms]

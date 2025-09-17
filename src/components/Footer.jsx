@@ -12,7 +12,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-black" role="contentinfo" aria-label="Site footer">
+    <footer className="bg-black" aria-label="Site footer">
       <div className="px-sm py-md md:py-lg lg:px-md lg:py-lg border-b border-t border-gray-500">
         <div className="footer__inner max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[7fr_5fr] gap-y-sm">
           <a
@@ -31,7 +31,7 @@ const Footer = () => {
               <h2 className="text-orange text-sm mb-0 pb-2 md:pb-2xs text-center md:text-left">
                 {t("footerQuickLinks")}
               </h2>
-              <ul className="footer-menu flex flex-col gap-3xs" role="list">
+              <ul className="footer-menu flex flex-col gap-3xs">
                 {footerMenu.map((item) => (
                   <li key={item.id} className="text-center md:text-left">
                     <LangLink
@@ -61,7 +61,6 @@ const Footer = () => {
                     viewBox="0 0 24 24"
                     fill="none"
                     aria-hidden="true"
-                    role="img"
                   >
                     <title>Email icon</title>
                     <path
@@ -88,7 +87,6 @@ const Footer = () => {
                     viewBox="0 0 24 24"
                     fill="none"
                     aria-hidden="true"
-                    role="img"
                   >
                     <title>Phone icon</title>
                     <path

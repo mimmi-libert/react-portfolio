@@ -3,7 +3,7 @@ import parse from "html-react-parser";
 
 function PromoCard({ title, description, image, icon: Icon, index }) {
   return (
-    <div className="flex flex-col gap-3 text-white rounded-[5px] p-5 sm:p-xs md:p-sm relative odd:bg-teal-dark even:bg-brown">
+    <div className="flex flex-col gap-2 sm:gap-3 text-white rounded-[5px] p-5 sm:p-xs md:p-sm relative odd:bg-teal-dark even:bg-brown">
       {/* Background image overlay */}
       {image && (
         <div

@@ -76,14 +76,14 @@ function SecondaryCase({ id, category, organization, image, status, index }) {
         >
           <ImageZoom
             src={translatedCaseData.image}
-            className="h-full overflow-hidden rounded-[5px]"
+            className="h-full w-full rounded-[5px]"
           >
             <img
               src={translatedCaseData.image}
               alt={`${translatedCaseData.organization} - ${categoryLabels.join(
                 " / "
               )} project`}
-              className="h-full w-full object-cover overflow-hidden"
+              className="h-full w-full object-cover"
             />
           </ImageZoom>
           {isUnderConstruction && (
