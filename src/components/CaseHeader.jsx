@@ -82,18 +82,14 @@ const CaseHeader = () => {
           <div className="flex items-center justify-end">
             <button
               onClick={handleLanguageToggle}
-              className="w-[40px] h-[40px] inline-flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-8 focus-visible:ring-offset-black focus:rounded-full"
+              className="md:mr-[8px] relative w-[40px] h-[40px] before:content-[''] before:absolute before:block before:w-[36px] before:h-[36px]
+                md:before:w-[48px] md:before:h-[48px] before:rounded-full before:transition-colors
+                before:duration-300 before:ease-in-out before:top-1/2 before:left-1/2 before:translate-[-50%] before:bg-[rgba(247,247,247,0.1)] inline-flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-8 focus-visible:ring-offset-black focus:rounded-full"
               aria-label={`Switch to ${
                 language === "en" ? "Swedish" : "English"
               }`}
             >
-              <span
-                className="relative md:mr-[8px] text-orange font-rubik text-sm uppercase
-                before:content-[''] before:absolute before:block before:w-[36px] before:h-[36px]
-                md:before:w-[48px] md:before:h-[48px] before:rounded-full before:transition-colors
-                before:duration-300 before:ease-in-out before:top-1/2 before:left-1/2 before:translate-[-50%] before:bg-[rgba(247,247,247,0.1)]
-                after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[1.5px] after:bg-orange after:transform after:scale-x-0 after:origin-center after:duration-[300ms] hover:after:scale-x-100"
-              >
+              <span className="relative text-orange font-rubik text-sm uppercase after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[1.5px] after:bg-orange after:transform after:scale-x-0 after:origin-center after:duration-[300ms] hover:after:scale-x-100">
                 {language === "en" ? "SV" : "EN"}
               </span>
             </button>

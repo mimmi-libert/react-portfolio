@@ -114,7 +114,7 @@ const About = () => {
               onKeyDown={handleKeyDown}
               aria-expanded={isResumeVisible}
               aria-controls="resume"
-              className="resume-button small-button border-teal border-1 mt-sm lg:mt-md flex font-light items-center gap-2 hover:bg-teal-dark hover:text-white transition-colors duration-100"
+              className="resume-button small-button border-teal border-1 mt-sm lg:mt-md flex font-light items-center gap-2 hover:bg-teal-dark hover:text-white transition-colors duration-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2"
             >
               {isResumeVisible ? t("resumeButtonClose") : t("resumeButtonOpen")}
               <span id="resume-icon" aria-hidden="true">
@@ -123,7 +123,6 @@ const About = () => {
             </button>
             <div
               id="resume"
-              role="region"
               aria-labelledby="resume-button"
               className={`resume pt-md scroll-mt-20 ${
                 isResumeVisible ? "" : "hidden"

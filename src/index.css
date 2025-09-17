@@ -144,19 +144,20 @@
     text-transform: uppercase;
   }
 
-  /* Focus styles - only for keyboard navigation */
-  button:focus-visible,
-  a:focus-visible,
-  [tabindex]:focus-visible {
-    outline: 2px solid var(--color-teal-dark);
+  /* Default fallback for all browsers */
+  button:focus,
+  a:focus,
+  LangLink:focus,
+  [tabindex]:focus {
+    outline: 2px solid var(--color-orange);
     outline-offset: 2px;
   }
 
-  footer button:focus-visible,
-  footer a:focus-visible,
-  footer [tabindex]:focus-visible {
-    outline: 2px solid var(--color-white);
-    outline-offset: 2px;
+  /* In browsers that support :focus-visible, suppress mouse-focus outline */
+  button:focus:not(:focus-visible),
+  a:focus:not(:focus-visible),
+  [tabindex]:focus:not(:focus-visible) {
+    outline: none;
   }
 
   /* Accessibility */

@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="footer__inner max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[7fr_5fr] gap-y-sm">
           <a
             href="/"
-            className="footer__logo place-self-center md:place-self-start"
+            className="footer__logo place-self-center md:place-self-start focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
             aria-label="Go to homepage"
           >
             <img
@@ -99,7 +99,7 @@ const Footer = () => {
                     className="text-white text-sm relative pb-3xs
 											after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[1.5px] after:bg-orange 
 											after:transform after:scale-x-0 after:origin-center after:duration-[300ms]
-											hover:after:scale-x-100"
+											hover:after:scale-x-100 focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
                     aria-label="Call phone number 076 28 19 880"
                   >
                     076 28 19 880

@@ -68,7 +68,7 @@ function MainCase() {
   );
 
   return (
-    <article className="cases__main grid grid-rows-auto grid-cols-1 lg:grid-rows-1 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)] lg:max-h-[800px] overflow-hidden items-strech gap-y-2xs md:gap-y-xs">
+    <article className="cases__main grid grid-rows-auto grid-cols-1 lg:grid-rows-1 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)] lg:max-h-[800px] items-strech gap-y-2xs md:gap-y-xs">
       <LangLink
         to={`/case/${translatedCaseData.id}`}
         className="lg:row-span-full lg:col-span-full focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-4"
