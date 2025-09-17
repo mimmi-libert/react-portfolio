@@ -63,12 +63,12 @@ const secondaryCaseData = [
       "The project focuses on maintaining and strengthening the association's visual identity while restructuring the site to better meet the needs and expectations of its members and wider audience. Ahead of the official launch in early autumn 2025, I am applying the redesign to the web team's working prototype to test navigation, layout, and content flow, ensuring the design effectively supports both new visitors and returning members. My next step in the collaboration is to finalize the WordPress implementation and optimize the site for long-term usability, flexibility, and ease of maintenance.",
     ],
     gallery: [
-      "/assets/images/swingkatten-gallery-image-1.png",
-      "/assets/images/swingkatten-gallery-image-2.png",
-      "/assets/images/swingkatten-gallery-image-4.png",
-      "/assets/images/swingkatten-gallery-image-3.png",
-      "/assets/images/swingkatten-gallery-image-5.png",
-      "/assets/images/swingkatten-gallery-image-6.png",
+      "/assets/images/swingkatten.png",
+      "/assets/images/swingkatten.png",
+      "/assets/images/swingkatten.png",
+      "/assets/images/swingkatten.png",
+      "/assets/images/swingkatten.png",
+      "/assets/images/swingkatten.png",
     ],
   },
   {
