@@ -55,7 +55,6 @@ const CaseHeader = () => {
         <div className="max-w-[1240px] mx-auto flex justify-between items-center">
           <LangLink
             to="/"
-            reloadDocument={true}
             className="text-orange flex items-center gap-3xs font-rubik text-sm relative
 											after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[1.5px] after:bg-orange 
 											after:transform after:scale-x-0 after:origin-center after:duration-[300ms]

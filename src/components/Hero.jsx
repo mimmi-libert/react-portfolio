@@ -60,7 +60,7 @@ const Hero = () => {
 
   return (
     <section className="hero grid bg-black w-full hero-bg-responsive relative">
-      <div className="px-xs md:px-sm lg:px-lg py-xl lg:py-2xl xl:py-3xl flex flex-col justify-center">
+      <div className="px-xs md:px-sm lg:px-lg py-xl lg:py-2xl xl:py-[148px] flex flex-col justify-center">
         <div className="hero__inner">
           <div className="hero__content max-w-[1240px] mx-auto text-white flex flex-col gap-2xs md:gap-2xs lg:gap-xs">
             <h1 className="sr-only">Mimmi Libert - Portfolio</h1>

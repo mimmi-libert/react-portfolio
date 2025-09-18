@@ -114,7 +114,6 @@ const Header = () => {
         <div className="header__inner max-w-[1240px] mx-auto grid grid-cols-2 lg:grid-cols-[1fr_2fr_1fr] items-center">
           <LangLink
             to="/"
-            reloadDocument={true}
             className="header__logo h-[1.15rem] md:h-[1.5rem] focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
             aria-label="Go to homepage"
           >

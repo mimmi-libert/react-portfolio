@@ -108,7 +108,6 @@ function AllCases() {
                 )}
                 <LangLink
                   to={`/case/${caseItem.id}`}
-                  reloadDocument={true}
                   className="block focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-4" // The entire area is clickable
                 >
                   <figure
