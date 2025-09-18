@@ -1,0 +1,5 @@
+# Allow all search engines to crawl all content
+User-agent: *
+Allow: /
+
+# Sitemap: https://mimmilibert.se/sitemap.xml
