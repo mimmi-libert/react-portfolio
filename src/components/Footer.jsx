@@ -119,7 +119,7 @@ const Footer = () => {
           <div className="flex gap-2xs items-center order-first sm:order-last">
             <p className="text-white text-xs">{t("footerReact")}</p>
             <a
-              href="#"
+              href="https://github.com/mimmi-libert/react-portfolio.git"
               className="group relative flex items-center justify-center before:content-[''] before:h-[32px] before:w-[32px] before:z-0 before:rounded-full before:absolute before:top-1/2 before:left-1/2 before:translate-[-50%] before:bg-grey focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-8 focus-visible:ring-offset-black focus:rounded-full"
               aria-label="View website on Github"
             >
