@@ -218,9 +218,9 @@ const GalleryModal = ({ images, isOpen, initialIndex = 0, onClose }) => {
               <button
                 key={index}
                 onClick={() => goToImage(index)}
-                className={`rounded-[5px] aspect-[4/3] border overflow-hidden transition-all focus-visible:outline-4 focus-visible:outline-teal focus-visible:outline-offset-0 ${
+                className={`rounded-[5px] aspect-[4/3] border-4 overflow-hidden transition-all focus-visible:outline-4 focus-visible:outline-teal focus-visible:outline-offset-0 ${
                   index === currentIndex
-                    ? "border-orange"
+                    ? "border-teal"
                     : " border-white hover:border-black-transparent"
                 }`}
                 aria-label={`Go to image ${index + 1}`}
