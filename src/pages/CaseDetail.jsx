@@ -140,7 +140,8 @@ function CaseDetail() {
         <section
           className="case-detail bg-white text-black py-sm sm:py-md md:py-lg lg:pt-xl px-xs md:px-sm lg:px-lg border-teal border-t-[32px]"
           style={{
-            backgroundImage: "url(/assets/images/case-background-design.png)",
+            backgroundImage:
+              "url(/assets/images/case-background-design-smaller.png)",
             backgroundRepeat: "no-repeat",
           }}
         >
@@ -244,7 +245,7 @@ function CaseDetail() {
                   <a
                     href={caseData.pdfUrl}
                     download
-                    className="group relative flex gap-xs w-auto items-center justify-center focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-teal focus-visible:ring-offset-14 focus-visible:ring-offset-white focus-visible:rounded-full"
+                    className="group relative flex gap-2xs sm:gap-xs w-auto items-center justify-center focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-teal focus-visible:ring-offset-14 focus-visible:ring-offset-white focus-visible:rounded-full"
                     aria-label="Download Nordanvinds Graphic Profile PDF"
                   >
                     <span className="text-xs font-medium text-brown hover:underline order-last lg:order-first">
