@@ -146,7 +146,7 @@ function CaseDetail() {
         >
           <div className="case-detail__inner max-w-[1240px] mx-auto grid lg:grid-cols-[7fr_5fr] items-start gap-xs sm:gap-sm md:gap-md lg:gap-lg">
             <div className="">
-              <h2 className="text-lg mb-2 lg:mb-2xs">
+              <h2 className="md:text-lg mb-2 lg:mb-2xs">
                 {t("caseHeadingBackground")}
               </h2>
               {Array.isArray(translatedCaseData.fullDescription) ? (
@@ -278,7 +278,7 @@ function CaseDetail() {
             {translatedCaseData.gallery &&
               translatedCaseData.gallery.length > 1 && (
                 <div className="mb-8">
-                  <h2 className="text-lg">{t("caseHeadingGallery")}</h2>
+                  <h2 className="md:text-lg">{t("caseHeadingGallery")}</h2>
                   <div className="grid md:grid-cols-2 gap-2xs md:gap-sm lg:gap-md">
                     {translatedCaseData.gallery.map((image, index) => (
                       <figure

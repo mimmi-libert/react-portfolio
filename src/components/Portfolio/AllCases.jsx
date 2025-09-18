@@ -84,7 +84,7 @@ function AllCases() {
   return (
     <section className="cases px-xs md:px-sm lg:px-lg py-sm md:py-md lg:py-lg bg-black text-white">
       <div className="cases__inner max-w-[1240px] mx-auto">
-        <h2 className="text-lg text-center">{t("caseHeadingAllCases")}</h2>
+        <h2 className="md:text-lg text-center">{t("caseHeadingAllCases")}</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-x-sm lg:gap-x-lg gap-y-sm lg:gap-y-md">
           {translatedCases.map((caseItem) => {
             const isCaseUnderConstruction =

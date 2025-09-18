@@ -11,7 +11,7 @@
   --text-md: clamp(1.15rem, 0.8142rem + 0.9009vw, 1.625rem);
   --text-lg: clamp(1.25rem, 0.9899rem + 1.2613vw, 2.125rem);
   --text-xl: clamp(1.5rem, 1.1098rem + 1.8919vw, 2.8125rem);
-  --text-2xl: clamp(2rem, 1.4784rem + 2.4545vw, 3.6875rem);
+  --text-2xl: clamp(1.9375rem, 1.4172rem + 2.5225vw, 3.6875rem);
 
   /* Custom spacings */
   --spacing-3xs: 0.25rem;
@@ -267,8 +267,8 @@
 
   @media screen and (min-width: 640px) {
     .hero-bg-responsive {
-      background-size: 280px;
-      background-position: calc(50% + 280px) bottom;
+      background-size: 360px;
+      background-position: calc(50% + 300px) bottom;
     }
   }
 

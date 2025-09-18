@@ -76,10 +76,10 @@ const Hero = () => {
                 {text}
               </span>
             </h2>
-            <p className="hidden md:block ingress text-md leading-normal max-w-[560px] md:max-w-[620px] lg:max-w-[800px]">
+            <p className="hidden sm:block ingress text-md leading-normal max-w-[560px] sm:max-w-[640px] md:max-w-[640px] lg:max-w-[716px] xl:max-w-[780px]">
               {parse(`${t("heroSubtitle")} ${t("heroSubtitle2")}`)}
             </p>
-            <p className="text-gray-200 md:hidden ingress text-md leading-normal max-w-[560px] md:max-w-[620px] lg:max-w-[800px] text-balance">
+            <p className="text-gray-200 sm:hidden ingress text-md leading-normal max-w-[560px] md:max-w-[620px] lg:max-w-[800px] text-balance">
               {parse(`${t("heroShortSubtitle")}`)}
             </p>
             <div className="hero__buttons flex flex-wrap gap-y-2xs gap-x-2xs md:gap-x-xs pt-3xs md:pt-2xs">

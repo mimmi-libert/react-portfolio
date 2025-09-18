@@ -149,7 +149,7 @@ export const en = {
       task: "Visual branding, Web Design & Web Development",
       date: "May 2025 - present",
       description:
-        "Currently contributing to the renewal of the organization's web site and logo, with a focus on visual clarity, user-friendly navigation and streamlined content. As part of this work, I'm developing a new website in WordPress (migrating from Joomla), tailored to the organization's specific needs.",
+        "Managing the modernization of the organization's web site and logo, with a focus on visual clarity, user-friendly navigation and streamlined content. As part of this work, I'm developing a new website in WordPress (migrating from Joomla), tailored to the organization's specific needs.",
     },
     stordammensSkola: {
       organization: "Stordammens skola & Korsängsskolan",

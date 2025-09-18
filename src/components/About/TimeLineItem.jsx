@@ -71,9 +71,11 @@ function TimeLineItem(props) {
         >
           {getLocation()}
         </span>
-        <h3>{getHeading()}</h3>
-        <span className="text-xs text-brown font-poppins">{props.date}</span>
-        <p className="pt-2xs">{props.description}</p>
+        <h3 className="py-[2px]">{getHeading()}</h3>
+        <span className="text-xs pt-2xs text-brown font-poppins">
+          {props.date}
+        </span>
+        <p className="pt-3 md:pt-2xs">{props.description}</p>
       </div>
     </article>
   );

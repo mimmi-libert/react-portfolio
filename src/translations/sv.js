@@ -146,7 +146,7 @@ export const sv = {
       task: "Grafisk design, webbdesign & webbutveckling",
       date: "Maj 2025 - nuvarande",
       description:
-        "Bidrar för närvarande till förnyelsen av organisationens webbplats och logotyp, med fokus på visuell tydlighet, användarvänlig navigation och strömlinjeformat innehåll. Som del av detta arbete utvecklar jag en ny webbplats i WordPress (migrering från Joomla), anpassad till organisationens specifika behov.",
+        "Ansvarar för moderniseringen av föreningens webbplats och logotyp, med fokus på visuell tydlighet och användarvänlig navigation. Som del av detta arbete utvecklar jag en ny webbplats i WordPress (migrering från Joomla), anpassad till organisationens specifika behov.",
     },
     stordammensSkola: {
       organization: "Stordammens skola & Korsängsskolan",
