@@ -123,10 +123,7 @@ const Header = () => {
 
           {/* Main menu */}
           <nav aria-label="Main navigation" className="hidden lg:block">
-            <ul
-              className="main-menu gap-x-sm justify-center flex"
-              role="menubar"
-            >
+            <ul className="main-menu gap-x-sm justify-center flex">
               {mainMenu.map((item) => (
                 <li key={item.id}>
                   <a
@@ -135,7 +132,6 @@ const Header = () => {
 											after:transform after:scale-x-0 after:origin-center after:duration-[300ms]
 											hover:after:scale-x-100 focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
                     href={item.href}
-                    role="menuitem"
                   >
                     {item.label}
                   </a>
@@ -226,17 +222,13 @@ const Header = () => {
           aria-label="Mobile navigation"
           aria-hidden="false"
         >
-          <ul
-            className="px-sm pt-2xs pb-sm flex flex-col gap-y-xs items-end"
-            role="menu"
-          >
+          <ul className="px-sm pt-2xs pb-sm flex flex-col gap-y-xs items-end">
             {responsiveMenu.map((item, index) => (
               <li key={item.id}>
                 <a
                   href={item.href}
                   className="block relative text-orange font-rubik text-sm uppercase after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[1.5px] after:bg-orange after:transform after:scale-x-0 after:origin-center after:duration-[300ms]
  									hover:after:scale-x-100"
-                  role="menuitem"
                   onClick={() => setMenuOpen(false)}
                   onKeyDown={(event) =>
                     handleMenuItemKeyDown(

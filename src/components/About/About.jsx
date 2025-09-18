@@ -98,7 +98,7 @@ const About = () => {
             </div>
             <figure className="w-[320px] h-[320px] sm:hidden lg:block lg:w-full lg:h-full place-self-center">
               <img
-                src="/assets/images/portfolio__about-image.png"
+                src="/assets/images/portfolio__about-image-smaller.png"
                 alt="About me"
                 className="rounded-full object-cover aspect-square"
               />

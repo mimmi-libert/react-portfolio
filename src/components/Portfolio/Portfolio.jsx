@@ -20,7 +20,6 @@ const Portfolio = () => {
 
           <div
             className="cases grid gap-sm sm:gap-md"
-            role="region"
             aria-label="Portfolio cases"
           >
             <MainCase />

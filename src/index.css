@@ -253,14 +253,31 @@
   }
 
   /* Hero background image */
+
   .hero-bg-responsive {
-    background-size: 0px;
-    background-position: 105% bottom;
+    background-image: url("/public/assets/images/hero-image-smaller.png");
+    background-repeat: no-repeat;
+    background-size: 360px;
+    background-position: calc(50% + 160px) bottom;
+  }
+
+  @media screen and (min-width: 640px) {
+    .hero-bg-responsive {
+      background-size: 320px;
+      background-position: calc(50% + 360px) bottom;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .hero-bg-responsive {
+      background-size: 400px;
+      background-position: calc(50% + 360px) bottom;
+    }
   }
 
   @media screen and (min-width: 1024px) {
     .hero-bg-responsive {
-      background-position: calc(50% + 400px) bottom;
+      background-position: calc(50% + 450px) bottom;
       background-size: 500px;
     }
   }

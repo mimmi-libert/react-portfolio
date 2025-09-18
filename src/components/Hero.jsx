@@ -58,13 +58,7 @@ const Hero = () => {
   }, [charIndex, isDeleting, wordIndex, words]);
 
   return (
-    <section
-      className="hero grid bg-black w-full hero-bg-responsive"
-      style={{
-        backgroundImage: "url(/assets/images/hero-image.png)",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
+    <section className="hero grid bg-black w-full hero-bg-responsive relative">
       <div className="px-xs md:px-sm lg:px-lg py-md md:py-xl lg:py-2xl xl:py-3xl flex flex-col justify-center">
         <div className="hero__inner">
           <div className="hero__content max-w-[1240px] mx-auto text-white flex flex-col gap-2xs md:gap-2xs lg:gap-xs">
@@ -81,7 +75,7 @@ const Hero = () => {
                 {text}
               </span>
             </h2>
-            <p className="ingress text-md leading-normal">
+            <p className="ingress text-md leading-normal max-w-[680px] lg:max-w-[1440px]">
               {t("heroSubtitle")} <br></br>
               {t("heroSubtitle2")}
             </p>

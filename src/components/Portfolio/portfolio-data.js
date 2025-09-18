@@ -22,7 +22,7 @@ const mainCaseData = [
     organization: "Swedish Aral Sea Society", // Default English
     description:
       "The Swedish Aral Sea Society is undergoing a renewal of its visual identity and website. A new logo and web design has been developed to highlight the organization's environmental focus, with a full migration from Joomla to WordPress planned for autumn 2025 to ensure a modern, flexible platform for future growth.",
-    image: "/assets/images/SASS-thumbnail.png",
+    image: "/assets/images/SASS-thumbnail-smaller.png",
     fullDescription: [
       "The Swedish Aral Sea Society is a Sweden-based non-profit organization working to strengthen democracy and promote sustainable development in Central Asia, notably in the Aral Sea region. Founded in the late 90s, the organization has now begun the process of modernizing and clarifying its visual identity and website.",
       "I chose this organization as my final school project, with the goal of creating a platform featuring a clear, user-friendly structure and streamlined content presentation to better communicate their mission. As part of this, I developed an updated logo and design that highlight the society's environmental focus—drawing inspiration from the region's climate challenges while reflecting a tone of hope and progress aligned with their work.",
@@ -86,7 +86,7 @@ const secondaryCaseData = [
       adobePhotoshop: true,
     },
     organization: "Nordanvind",
-    image: "/assets/images/nv-thumbnail.jpg",
+    image: "/assets/images/nv-thumbnail-smaller.png",
     description: "Brief description of Nordanvind project",
     fullDescription: [
       "Nordanvind is a fictional energy company investing in sustainable energy sources and solutions to create a greener future for generations to come. By harnessing the power of wind, sun, and water, the company contributes to the transition toward a carbon-neutral world. Nordanvind believes in uniting innovation with environmental responsibility and sought to communicate this through an effective, modern, and recognizable visual identity.",
