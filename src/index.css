@@ -11,7 +11,7 @@
   --text-md: clamp(1.15rem, 0.8142rem + 0.9009vw, 1.625rem);
   --text-lg: clamp(1.25rem, 0.9899rem + 1.2613vw, 2.125rem);
   --text-xl: clamp(1.5rem, 1.1098rem + 1.8919vw, 2.8125rem);
-  --text-2xl: clamp(1.625rem, 1.0118rem + 2.973vw, 3.6875rem);
+  --text-2xl: clamp(2rem, 1.4784rem + 2.4545vw, 3.6875rem);
 
   /* Custom spacings */
   --spacing-3xs: 0.25rem;
@@ -255,22 +255,27 @@
   /* Hero background image */
 
   .hero-bg-responsive {
-    background-image: url("/public/assets/images/hero-image-smaller.png");
+    background-image: linear-gradient(
+        rgba(50, 41, 47, 0.7),
+        rgba(50, 41, 47, 0.7)
+      ),
+      url("/public/assets/images/hero-image-smaller.png");
     background-repeat: no-repeat;
     background-size: 360px;
-    background-position: calc(50% + 160px) bottom;
+    background-position: calc(50% + 170px) bottom;
   }
 
   @media screen and (min-width: 640px) {
     .hero-bg-responsive {
-      background-size: 320px;
-      background-position: calc(50% + 360px) bottom;
+      background-size: 280px;
+      background-position: calc(50% + 280px) bottom;
     }
   }
 
   @media screen and (min-width: 768px) {
     .hero-bg-responsive {
-      background-size: 400px;
+      background-image: url("/public/assets/images/hero-image-smaller.png");
+      background-size: 440px;
       background-position: calc(50% + 360px) bottom;
     }
   }
@@ -285,7 +290,7 @@
   @media screen and (min-width: 1280px) {
     .hero-bg-responsive {
       background-position: calc(50% + 500px) bottom;
-      background-size: 600px;
+      background-size: 640px;
     }
   }
 

@@ -107,7 +107,7 @@ function Promo() {
     <section className="promo grid border-t-[32px] border-b-[32px] border-teal w-full">
       <div className="px-xs md:px-sm lg:px-lg py-md md:py-lg lg:py-2xl">
         <div className="promo__inner max-w-[1240px] mx-auto place-items-center">
-          <h2 className="md:pb-3xs text-center">{t("promoTitle")}</h2>
+          <h2 className="pb-3xs text-center">{t("promoTitle")}</h2>
           <p className="narrow text-center text-sm pb-sm md:pb-md">
             {t("promoDescription")}
           </p>

@@ -13,9 +13,12 @@ export const sv = {
 
   // Hero
   heroTitle: "Från idé till",
-  heroSubtitle: "Jag är en webbdesigner och frontend-utvecklare i Uppsala,",
+  heroSubtitle:
+    "Jag är en <strong>webbdesigner</strong> och <strong>frontend-utvecklare</strong> i Uppsala,",
   heroSubtitle2:
     "redo att omsätta dina idéer till levande varumärken och webbplatser.",
+  heroShortSubtitle:
+    "<strong>Webbdesign</strong> & <strong>frontend-utveckling</strong> i Uppsala.",
   getInTouch: "Kontakta mig",
   portfolioButton: "Portfolio",
   createdInReact: "Skapad i React",

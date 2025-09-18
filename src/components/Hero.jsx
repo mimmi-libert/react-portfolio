@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useLanguage } from "../context/LanguageContext";
+import parse from "html-react-parser";
 
 const Hero = () => {
   const { t, language } = useLanguage();
@@ -59,11 +60,11 @@ const Hero = () => {
 
   return (
     <section className="hero grid bg-black w-full hero-bg-responsive relative">
-      <div className="px-xs md:px-sm lg:px-lg py-md md:py-xl lg:py-2xl xl:py-3xl flex flex-col justify-center">
+      <div className="px-xs md:px-sm lg:px-lg py-xl lg:py-2xl xl:py-3xl flex flex-col justify-center">
         <div className="hero__inner">
           <div className="hero__content max-w-[1240px] mx-auto text-white flex flex-col gap-2xs md:gap-2xs lg:gap-xs">
             <h1 className="sr-only">Mimmi Libert - Portfolio</h1>
-            <h2 className="heading-1 flex flex-col sm:flex-row sm:gap-3 leading-tight">
+            <h2 className="heading-1 md:pb-0 flex flex-col sm:flex-row sm:gap-3 leading-tight">
               {t("heroTitle")}
               <span
                 className="text-orange min-h-[1.25em]"
@@ -75,9 +76,11 @@ const Hero = () => {
                 {text}
               </span>
             </h2>
-            <p className="ingress text-md leading-normal max-w-[680px] lg:max-w-[1440px]">
-              {t("heroSubtitle")} <br></br>
-              {t("heroSubtitle2")}
+            <p className="hidden md:block ingress text-md leading-normal max-w-[560px] md:max-w-[620px] lg:max-w-[800px]">
+              {parse(`${t("heroSubtitle")} ${t("heroSubtitle2")}`)}
+            </p>
+            <p className="text-gray-200 md:hidden ingress text-md leading-normal max-w-[560px] md:max-w-[620px] lg:max-w-[800px] text-balance">
+              {parse(`${t("heroShortSubtitle")}`)}
             </p>
             <div className="hero__buttons flex flex-wrap gap-y-2xs gap-x-2xs md:gap-x-xs pt-3xs md:pt-2xs">
               <a

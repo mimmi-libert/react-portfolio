@@ -13,8 +13,11 @@ export const en = {
 
   // Hero
   heroTitle: "From idea to",
-  heroSubtitle: "I'm a web designer & frontend developer in Uppsala,",
+  heroSubtitle:
+    "I'm a <strong>web designer & frontend developer </strong> in Uppsala,",
   heroSubtitle2: "helping turn your ideas into beautiful brands and websites.",
+  heroShortSubtitle:
+    "<strong>Web design</strong> & <strong>frontend development</strong> in Uppsala.",
   getInTouch: "Get in touch",
   portfolioButton: "Portfolio",
   createdInReact: "Created in React",
