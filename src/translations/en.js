@@ -58,15 +58,15 @@ export const en = {
           "The Swedish Aral Sea Society is undergoing a renewal of its visual identity and website. A new logo and web design has been developed to more clearly communicate the organization’s mission, with a full migration from Joomla to WordPress planned for autumn 2025 to ensure a modern, flexible platform for future growth.",
         fullDescription: [
           "The Swedish Aral Sea Society is a Sweden-based non-profit organization working to strengthen democracy and promote sustainable development in Central Asia, notably in the Aral Sea region. Founded in the late 90s, the organization has now begun the process of modernizing and clarifying its visual identity and website.",
-          "I chose this organization as my final school project, with the goal of creating a platform featuring a clear, user-friendly structure and streamlined content presentation to better communicate their mission. As part of this, I've developed a new logo in Adobe Illustrator and a web design in Figma that highlight the society's environmental focus - drawing inspiration from the region's climate challenges while reflecting a tone of hope and progress aligned with their work.",
-          "I am currently working with the website's migration from Joomla to WordPress, ensuring a modern, flexible solution tailored to the organization's needs and future growth. Until the full migration is complete, I have created a basic prototype to visualize the new structure and design approach.",
+          "I chose this organization as my final school project, with the goal of creating a platform featuring a clear, user-friendly structure and streamlined content presentation to better communicate their mission. As part of this, I've developed a new logo in <strong>Adobe Illustrator</strong> and a web design in Figma that highlight the society's environmental focus - drawing inspiration from the region's climate challenges while reflecting a tone of hope and progress aligned with their work.",
+          "I am currently working with the website's migration from <strong>Joomla</strong> to <strong>WordPress</strong>, ensuring a modern, flexible solution tailored to the organization's needs and future growth. Until the full migration is complete, I have created a basic prototype to visualize the new structure and design approach.",
         ],
       },
       swingkatten: {
         organization: "Swingkatten",
         description: "Kort beskrivning av Swingkatten-projektet",
         fullDescription: [
-          "Swingkatten is an Uppsala-based swing dance association that offers year-round classes and activities. Having been a member of Swingkatten for several years, I recently joined the web team to contribute my skills to the redesign and rebuild of the website in WordPress (Elementor).",
+          "Swingkatten is an Uppsala-based swing dance association that offers year-round classes and activities. Having been a member of Swingkatten for several years, I recently joined the web team to contribute my skills to the redesign and rebuild of the website in <strong>WordPress (Elementor)</strong>.",
           "This project focuses on preserving and strengthening the association’s visual identity while redesigning the website to better meet the expectations of both members and a wider audience. The content has been restructured and the navigation streamlined to optimize user experience and highlight the more central elements. The layout is consistent and spacious, complemented by a softer color palette, with the aim of highlighting the association’s active work without overwhelming the visitor. Feel free to take a sneak peak of my ongoing work in the gallery! ",
         ],
       },
@@ -92,7 +92,7 @@ export const en = {
   aboutDescriptionIntro:
     "Armed with a teaching degree in mathematics, I spent the first years of my career in the classroom. Although I today channel a higher passion for web design and developing - the ideal blend of logic and creativity in my opinion - my goal remains the same: making content simple, accessible and engaging.",
   aboutDescriptionOutro:
-    "Are you an organization who values both autonomy and meaningful collaboration? If so, I'd love to be a part of it.",
+    "Are you an organization who values professional development and meaningful collaboration? If so, I'd love to be a part of it.",
   skills: "Current skill set",
   resumeButtonOpen: "See my resume",
   resumeButtonClose: "Hide my resume",
@@ -100,12 +100,13 @@ export const en = {
   // Skills
   skillsList: {
     uiDesign: {
-      category: "UI/UX Design:",
+      category: "Graphic and UI/UX Design:",
       description: "Figma, Adobe Illustrator & Adobe Photoshop.",
     },
     webDevelopment: {
       category: "Web Development:",
-      description: "HTML, CSS, JS, Wordpress, React, Tailwind & Sass.",
+      description:
+        "HTML, CSS (Sass/Tailwind), JavaScript (Vanilla/React), WordPress/PHP, Databases (MySQL/JSON) & API Integrations.",
     },
     developmentTools: {
       category: "Development tools:",
@@ -135,7 +136,7 @@ export const en = {
       task: "Internship",
       date: "May 2025 - June 2025",
       description:
-        "Interning part-time at a web agency as a web designer and front-end developer. At Balonka, I had the opportunity to create designs in Figmaand rebuild several websites in WordPress (Divi), based on client needs and specifications.",
+        "Interning part-time at a web agency as a web designer and front-end developer. At Balonka, I had the opportunity to create designs in Figma aand rebuild several websites in WordPress (Divi), based on client needs and specifications.",
     },
     swingkatten: {
       organization: "Swingkatten",
