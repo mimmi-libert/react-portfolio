@@ -62,7 +62,6 @@ function MainCase() {
   const isUnderConstruction =
     translatedCaseData.status === "under-construction";
 
-  // make this array once so alt text and pills match
   const categoryLabels = Object.keys(translatedCaseData.category).map((cat) =>
     t(`portfolio.categories.${cat}`)
   );
@@ -116,14 +115,16 @@ function MainCase() {
           {translatedCaseData.description}
         </p>
 
-        <div className="flex flex-wrap gap-3 pt-2 md:pt-3xs lg:pt-2xs">
-          {Object.keys(translatedCaseData.category).map((cat) => (
-            <span
-              className="border border-white text-white-transparent md:text-white text-xs font-rubik rounded-[5px] px-2 py-3xs"
-              key={cat}
-            >
-              {t(`portfolio.categories.${cat}`)}
-            </span>
+        <div className="flex flex-wrap gap-1 items-center md:pt-3xs">
+          {Object.keys(translatedCaseData.category).map((cat, index) => (
+            <React.Fragment key={cat}>
+              <span className="text-white-transparent text-xs sm:text-sm font-rubik">
+                {t(`portfolio.categories.${cat}`)}
+              </span>
+              {index < Object.keys(translatedCaseData.category).length - 1 && (
+                <span className="text-white-transparent text-sm"> / </span>
+              )}
+            </React.Fragment>
           ))}
         </div>
         {isUnderConstruction && (

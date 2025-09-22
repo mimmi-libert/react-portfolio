@@ -97,7 +97,7 @@ function SecondaryCase({ id, category, organization, image, status, index }) {
           )}
         </figure>
       </LangLink>
-      <div className="cases__secondary__content grid gap-2 md:gap-3">
+      <div className="cases__secondary__content grid gap-2 xl:gap-3">
         <LangLink
           to={`/case/${translatedCaseData.id}`}
           className="inline-block focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-4"
@@ -109,12 +109,15 @@ function SecondaryCase({ id, category, organization, image, status, index }) {
             {translatedCaseData.organization}
           </h3>
         </LangLink>
-        <div className="flex flex-wrap gap-3 pt-2 md:pt-3xs">
-          {Object.keys(translatedCaseData.category).map((cat) => (
+        <div className="flex flex-wrap gap-1 items-center">
+          {Object.keys(translatedCaseData.category).map((cat, index) => (
             <React.Fragment key={cat}>
-              <span className="border border-white text-white-transparent md:text-white text-xs font-rubik rounded-[5px] px-2 py-3xs">
+              <span className="text-white-transparent text-xs sm:text-sm font-rubik">
                 {t(`portfolio.categories.${cat}`)}
               </span>
+              {index < Object.keys(translatedCaseData.category).length - 1 && (
+                <span className="text-white-transparent text-sm"> / </span>
+              )}
             </React.Fragment>
           ))}
         </div>

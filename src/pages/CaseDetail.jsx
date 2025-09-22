@@ -147,7 +147,7 @@ function CaseDetail() {
         >
           <div className="case-detail__inner max-w-[1240px] mx-auto grid lg:grid-cols-[7fr_5fr] items-start gap-xs sm:gap-sm md:gap-md lg:gap-lg">
             <div className="">
-              <h2 className="md:text-lg mb-2 lg:mb-2xs">
+              <h2 className="md:text-lg mb-3 lg:mb-2xs">
                 {t("caseHeadingBackground")}
               </h2>
               {Array.isArray(translatedCaseData.fullDescription) ? (
@@ -161,14 +161,17 @@ function CaseDetail() {
                   {parse(translatedCaseData.fullDescription)}
                 </p>
               )}
-              <div className="flex flex-wrap gap-2 md:gap-3 pt-3xs md:pt-3">
-                {Object.keys(translatedCaseData.tools).map((tool) => (
-                  <span
-                    className="border border-teal-dark text-teal-dark font-rubik text-[12px] md:text-xs font-medium rounded-[5px] px-2 py-3xs"
-                    key={tool}
-                  >
-                    {t(`portfolio.tools.${tool}`)}
-                  </span>
+              <div className="flex flex-wrap gap-1 items-center pt-1">
+                {Object.keys(translatedCaseData.tools).map((tool, index) => (
+                  <React.Fragment key={tool}>
+                    <span className="text-brown font-medium text-sm font-rubik">
+                      {t(`portfolio.tools.${tool}`)}
+                    </span>
+                    {index <
+                      Object.keys(translatedCaseData.tools).length - 1 && (
+                      <span className="text-brown text-sm"> / </span>
+                    )}
+                  </React.Fragment>
                 ))}
               </div>
             </div>

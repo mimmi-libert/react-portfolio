@@ -47,10 +47,10 @@ const workExperienceList = [
     translationKey: "balonka",
     organization: "Balonka",
     task: "Internship",
-    date: "May 2025 - June 2025",
+    date: "April 2025 - May 2025",
     description:
       "Interning part-time at a web agency as a web designer and front-end developer. At Balonka, I had the opportunity to create designs and rebuild several websites in WordPress (Divi), based on client needs and specifications.",
-    dateObject: new Date("2025-05-01"),
+    dateObject: new Date("2025-04-01"),
   },
   {
     type: "work-experience",

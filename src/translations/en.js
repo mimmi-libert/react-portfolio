@@ -58,7 +58,7 @@ export const en = {
           "The Swedish Aral Sea Society is undergoing a renewal of its visual identity and website. A new logo and web design has been developed to more clearly communicate the organization’s mission, with a full migration from Joomla to WordPress planned for autumn 2025 to ensure a modern, flexible platform for future growth.",
         fullDescription: [
           "The Swedish Aral Sea Society is a Sweden-based non-profit organization working to strengthen democracy and promote sustainable development in Central Asia, notably in the Aral Sea region. Founded in the late 90s, the organization has now begun the process of modernizing and clarifying its visual identity and website.",
-          "I chose this organization as my final school project, with the goal of creating a platform featuring a clear, user-friendly structure and streamlined content presentation to better communicate their mission. As part of this, I've developed a new logo in <strong>Adobe Illustrator</strong> and a web design in Figma that highlight the society's environmental focus - drawing inspiration from the region's climate challenges while reflecting a tone of hope and progress aligned with their work.",
+          "I chose this organization as my final school project, with the goal of creating a platform featuring a clear, user-friendly structure and streamlined content presentation to better communicate their mission. As part of this, I've developed a new logo in <strong>Adobe Illustrator</strong> and a web design in <strong>Figma</strong> that highlight the society's environmental focus - drawing inspiration from the region's climate challenges while reflecting a tone of hope and progress aligned with their work.",
           "I am currently working with the website's migration from <strong>Joomla</strong> to <strong>WordPress</strong>, ensuring a modern, flexible solution tailored to the organization's needs and future growth. Until the full migration is complete, I have created a basic prototype to visualize the new structure and design approach.",
         ],
       },
@@ -134,7 +134,7 @@ export const en = {
     balonka: {
       organization: "BALONKA",
       task: "Internship",
-      date: "May 2025 - June 2025",
+      date: "April 2025 - May 2025",
       description:
         "Interning part-time at a web agency as a web designer and front-end developer. At Balonka, I had the opportunity to create designs in Figma aand rebuild several websites in WordPress (Divi), based on client needs and specifications.",
     },

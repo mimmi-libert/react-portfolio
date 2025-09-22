@@ -131,7 +131,7 @@ export const sv = {
     balonka: {
       organization: "BALONKA",
       task: "Praktik",
-      date: "Maj 2025 - Juni 2025",
+      date: "April 2025 - Maj 2025",
       description:
         "Praktiserade deltid på en webbbyrå som webbdesigner och frontend-utvecklare. På Balonka fick jag möjlighet att designa och bygga om flera webbplatser i WordPress (Divi) utifrån kundernas behov och önskemål.",
     },

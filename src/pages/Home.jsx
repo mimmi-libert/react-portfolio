@@ -9,9 +9,13 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <>
-      <div className="wrapper grid relative pt-[60px] md:pt-[80px] bg-white">
+      <div className="wrapper grid w-full">
         <Header />
-        <main id="main-content" tabIndex="-1">
+        <main
+          id="main-content"
+          className="bg-white relative pt-[60px] md:pt-[80px]"
+          tabIndex="-1"
+        >
           <Hero />
           <Promo />
           <Portfolio />

@@ -137,12 +137,18 @@ function AllCases() {
                       {caseItem.organization}
                     </h3>
                   </LangLink>
-                  <div className="flex flex-wrap gap-2 md:gap-3 pt-3xs">
-                    {Object.keys(caseItem.category).map((cat) => (
+                  <div className="flex flex-wrap gap-1 items-center">
+                    {Object.keys(caseItem.category).map((cat, index) => (
                       <React.Fragment key={cat}>
-                        <span className="border border-white text-white text-[12px] md:text-xs font-rubik rounded-[5px] px-2 py-3xs">
+                        <span className="text-white-transparent text-xs sm:text-sm font-rubik">
                           {t(`portfolio.categories.${cat}`)}
                         </span>
+                        {index < Object.keys(caseItem.category).length - 1 && (
+                          <span className="text-white-transparent text-sm">
+                            {" "}
+                            /{" "}
+                          </span>
+                        )}
                       </React.Fragment>
                     ))}
                   </div>
