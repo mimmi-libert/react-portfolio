@@ -17,6 +17,7 @@ const mainCaseData = [
       adobeIllustrator: true,
       adobePhotoshop: true,
       wordpress: true,
+      htmlJsCSS: true,
     },
     organization: "Swedish Aral Sea Society", // Default English
     description:
