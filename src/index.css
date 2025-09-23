@@ -306,7 +306,7 @@
   @media screen and (min-width: 1280px) {
     .hero-bg-responsive {
       background-position: calc(50% + 500px) bottom;
-      background-size: 608px;
+      background-size: 592px;
     }
   }
 
