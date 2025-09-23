@@ -10,8 +10,8 @@
   --text-sm: clamp(1rem, 0.9257rem + 0.3604vw, 1.25rem);
   --text-md: clamp(1.15rem, 0.8142rem + 0.9009vw, 1.625rem);
   --text-lg: clamp(1.25rem, 0.9899rem + 1.2613vw, 2.125rem);
-  --text-xl: clamp(1.5rem, 1.1098rem + 1.8919vw, 2.8125rem);
-  --text-2xl: clamp(1.9375rem, 1.4172rem + 2.5225vw, 3.6875rem);
+  --text-xl: clamp(1.5rem, 1.125rem + 1.875vw, 2.8125rem);
+  --text-2xl: clamp(1.9375rem, 1.3101rem + 2.6415vw, 3.6875rem);
 
   /* Custom spacings */
   --spacing-3xs: 0.25rem;
@@ -46,18 +46,27 @@
     box-sizing: border-box;
   }
 
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
   html {
     scroll-behavior: smooth;
+
+    @apply w-screen;
   }
 
   html,
   body {
     overscroll-behavior-y: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+
+    @apply w-full grid grid-cols-1 grid-rows-1;
+  }
+
+  #root,
+  #root > .wrapper {
+    @apply grid grid-cols-1 grid-rows-1 overflow-x-hidden;
   }
 
   .heading-1,
@@ -121,6 +130,13 @@
   .heading-1,
   h1 {
     font-size: var(--text-2xl);
+  }
+
+  @media screen and (max-width: 365px) {
+    .heading-1 {
+      font-size: 1.625rem;
+      font-weight: 600;
+    }
   }
 
   h2 {
@@ -275,7 +291,7 @@
   @media screen and (min-width: 768px) {
     .hero-bg-responsive {
       background-image: url("/public/assets/images/hero-image-smaller.png");
-      background-size: 440px;
+      background-size: 400px;
       background-position: calc(50% + 360px) bottom;
     }
   }

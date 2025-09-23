@@ -84,8 +84,8 @@ const About = () => {
     <section id="about" className="border-b-[32px] border-teal">
       <div className="px-xs md:px-sm py-md md:py-lg lg:px-lg lg:py-2xl">
         <div className="about__inner max-w-[1240px] mx-auto">
-          <section className="about__content grid lg:grid-cols-[7fr_5fr] gap-x-xl gap-y-sm border-b-1 border-teal pb-sm lg:pb-lg">
-            <div>
+          <section className="about__content grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-x-xl gap-y-sm border-b-1 border-teal pb-sm lg:pb-lg">
+            <div className="">
               <h2 className="">{t("aboutTitle")}</h2>
               <p className="">{t("aboutDescriptionIntro")}</p>
               <div className="py-xs lg:py-sm">
@@ -96,7 +96,7 @@ const About = () => {
               </div>
               <p className="">{t("aboutDescriptionOutro")}</p>
             </div>
-            <figure className="w-[320px] h-[320px] sm:hidden lg:block lg:w-full lg:h-full place-self-center">
+            <figure className="w-[272px] h-[272px] sm:hidden lg:block lg:w-full lg:h-full place-self-center">
               <img
                 src="/assets/images/portfolio__about-image-smaller.png"
                 alt="About me"
