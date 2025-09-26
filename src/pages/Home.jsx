@@ -8,23 +8,21 @@ import Footer from "../components/Footer";
 
 function Home() {
   return (
-    <>
-      <div className="wrapper grid w-full">
-        <Header />
-        <main
-          id="main-content"
-          className="bg-white relative pt-[60px] md:pt-[80px]"
-          tabIndex="-1"
-        >
-          <Hero />
-          <Promo />
-          <Portfolio />
-          <About />
-          <Contact />
-        </main>
-        <Footer />
-      </div>
-    </>
+    <div className="wrapper grid">
+      <Header />
+      <main
+        id="main-content"
+        className="bg-white relative pt-[60px] md:pt-[80px]"
+        tabIndex="-1"
+      >
+        <Hero />
+        <Promo />
+        <Portfolio />
+        <About />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   );
 }
 

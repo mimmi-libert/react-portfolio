@@ -42,14 +42,9 @@
 
 @layer base {
   /* GENERAL RESETS AND STYLING */
-  * {
-    box-sizing: border-box;
-  }
 
   html {
     scroll-behavior: smooth;
-
-    @apply w-screen;
   }
 
   html,
@@ -58,33 +53,15 @@
   }
 
   body {
-    margin: 0;
-    padding: 0;
-
-    @apply w-full grid grid-cols-1 grid-rows-1;
+    @apply grid w-full grid-cols-1 grid-rows-1;
   }
 
-  #root,
+  #root {
+    @apply grid grid-cols-1 grid-rows-1 w-full h-full overflow-x-hidden;
+  }
+
   #root > .wrapper {
-    @apply grid grid-cols-1 grid-rows-1 overflow-x-hidden;
-  }
-
-  .heading-1,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    margin: 0;
-  }
-
-  ul,
-  ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    @apply grid grid-cols-1 grid-rows-[auto_auto_auto] w-full h-full overflow-x-hidden;
   }
 
   a {
@@ -93,8 +70,6 @@
 
   button {
     background: none;
-    border: none;
-    outline: none;
     cursor: pointer;
   }
 
@@ -103,11 +78,6 @@
     max-width: 100%;
     height: auto;
     display: block;
-  }
-
-  figure,
-  img {
-    margin: 0;
   }
 
   /* TYPOGRAPHY */
@@ -174,19 +144,6 @@
   a:focus:not(:focus-visible),
   [tabindex]:focus:not(:focus-visible) {
     outline: none;
-  }
-
-  /* Accessibility */
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
   }
 
   /* High contrast mode support */
@@ -275,7 +232,7 @@
         rgba(50, 41, 47, 0.7),
         rgba(50, 41, 47, 0.7)
       ),
-      url("/public/assets/images/hero-image-smaller.png");
+      url("/assets/images/hero-image-smaller.png");
     background-repeat: no-repeat;
     background-size: 360px;
     background-position: calc(50% + 170px) bottom;
